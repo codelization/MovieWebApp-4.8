@@ -1,0 +1,248 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&amp;display=swap" />
+    <link rel="stylesheet" href="~/assets/vendor/swiper/swiper-bundle.min.css?v=7.2.0" />
+    <link rel="stylesheet" href="~/assets/vendor/fancybox/dist/jquery.fancybox.min.css?v=3.5.7" />
+    <link rel="stylesheet" href="~/assets/css/bootstrap-custom.min.css?v=1.0.0" />
+    <link rel="stylesheet" href="~/assets/css/moviewebapp.min.css?v=1.0.0" />
+    <script src="~/assets/vendor/jquery/dist/jquery.min.js?v=3.6.0"></script>
+    <script src="~/assets/js/preloader.min.js?v=1.0.0"></script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title> Movie Web App</title>
+    <link rel="icon" type="image/png" href="~/assets/images/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+</head>
+<body id="page" class="flq-navbar-icons-existence">
+    <!-- Preloader -->
+    <div class="flq-preloader">
+        <div class="flq-preloader-title display-1 h1">
+            <span>M</span>
+            <span>O</span>
+            <span>V</span>
+            <span>I</span>
+            <span>E</span>
+            <span>&nbsp;</span>
+            <span>W</span>
+            <span>E</span>
+            <span>B</span>
+            <span>&nbsp;</span>
+            <span>A</span>
+            <span>P</span>
+            <span>P</span>
+        </div>
+    </div>
+    <div class="flq-preloader-bg"></div>
+    <!-- / Preloader -->
+    <!-- Navbar top -->
+    <nav class="flq-navbar flq-navbar-top flq-navbar-top-cloud flq-navbar-top-fixed">
+        <div class="flq-navbar-container container-fluid">
+            <button class="btn btn-link me-4" data-bs-toggle="offcanvas" data-bs-target="#flq_offcanvas">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <a href="/" class="flq-navbar-brand me-auto me-auto me-lg-4">
+                <span class="nav-link-name">Movie Web App</span>
+            </a>
+            <ul class="nav nav-parent flex-grow-1 flq-navbar-nav justify-content-center d-none d-lg-flex">
+                <li class="nav-item active">
+                    <a href="/" class="nav-link">
+                        <span class="nav-link-name">Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <span class="nav-link-name">Trending</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <span class="nav-link-name">Top Rated</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <span class="nav-link-name">Action</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <span class="nav-link-name">Comedy</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <span class="nav-link-name">Horror</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <span class="nav-link-name">Romance</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <span class="nav-link-name">Mystery</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <span class="nav-link-name">Sci-Fi</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <span class="nav-link-name">Western</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <span class="nav-link-name">Animation</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <span class="nav-link-name">TV Movie</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <span class="nav-link-name">Movie</span>
+                    </a>
+                </li>
+            </ul>
+            <button class="flq-navbar-top-toggle btn btn-link ms-4 d-flex d-lg-none" data-fancybox data-src="#flq_navbar_mobile" data-base-class="flq-fancybox-navbar" data-animation-duration="1000" data-keyboard="false" data-auto-focus="false" data-touch="false" data-close-existing="true" data-small-btn="false" data-toolbar="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+    <!-- / Navbar top -->
+    <!-- Render body -->
+    <div class="content-wrap">
+        @RenderBody()
+    </div>
+    <!-- / Render body -->
+    <!-- Scroll top button -->
+    <div class="flq-scroll-top-wrapper">
+        <a class="flq-scroll-top-button flq-anchor" href="#page">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </a>
+        <div class="flq-scroll-progress flq-scroll-progress-circle">
+            <svg>
+                <circle stroke="currentColor" r="0" fill="none" />
+            </svg>
+        </div>
+    </div>
+    <!-- / Scroll top button -->
+    <!-- Popup navbar mobile -->
+    <nav class="flq-navbar-mobile fancybox-content" id="flq_navbar_mobile">
+        <div class="flq-fancybox-head">
+            <div class="container-fluid">
+                <button class="flq-fancybox-close btn btn-link ms-4" data-fancybox-close>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        <div class="container pt-4 pb-6">
+            <div class="flq-fancybox-body row gy-6 gx-6">
+                <div class="col-12 col-lg">
+                    <ul class="nav flex-column flq-navbar-nav accordion gy-3">
+                        <li class="nav-item active">
+                            <a href="/" class="nav-link">
+                                <span class="nav-link-name">Home</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <span class="nav-link-name">Trending</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <span class="nav-link-name">Top Rated</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <span class="nav-link-name">Action</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <span class="nav-link-name">Comedy</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <span class="nav-link-name">Horror</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <span class="nav-link-name">Romance</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <span class="nav-link-name">Mystery</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <span class="nav-link-name">Sci-Fi</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <span class="nav-link-name">Western</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <span class="nav-link-name">Animation</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <span class="nav-link-name">TV Movie</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <span class="nav-link-name">Movie</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- / Popup navbar mobile -->
+
+    <script src="~/assets/vendor/object-fit-images/dist/ofi.min.js?v=3.2.4"></script>
+    <script src="~/assets/vendor/popperjs/core/dist/umd/popper.min.js?v=2.10.2"></script>
+    <script src="~/assets/vendor/scrollreveal/dist/scrollreveal.min.js?v=4.0.9"></script>
+    <script src="~/assets/vendor/rellax/rellax.min.js?v=1.12.1"></script>
+    <script src="~/assets/vendor/vanilla-tilt/dist/vanilla-tilt.min.js?v=1.7.2"></script>
+    <script src="~/assets/vendor/animejs/lib/anime.min.js?v=3.2.0"></script>
+    <script src="~/assets/vendor/bootstrap/dist/js/bootstrap.min.js?v=5.1.3"></script>
+    <script src="~/assets/vendor/jarallax/dist/jarallax.min.js?v=1.12.7"></script>
+    <script src="~/assets/vendor/swiper/swiper-bundle.min.js?v=7.2.0"></script>
+    <script src="~/assets/vendor/fancybox/dist/jquery.fancybox.min.js?v=3.5.7"></script>
+    <script src="~/assets/vendor/jquery-countdown/dist/jquery.countdown.min.js?v=2.2.0"></script>
+    <script src="~/assets/vendor/moment/min/moment.min.js?v=2.29.1"></script>
+    <script src="~/assets/vendor/moment-timezone/builds/moment-timezone-with-data.min.js?v=0.5.34"></script>
+    <script src="~/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js?v=4.1.4"></script>
+    <script src="~/assets/vendor/isotope-layout/dist/isotope.pkgd.min.js?v=3.0.6"></script>
+    <script src="~/assets/vendor/bootstrap-validator/dist/validator.min.js?v=0.11.9"></script>
+    <script src="~/assets/js/moviewebapp.min.js?v=1.0.0"></script>
+    <script src="~/assets/js/moviewebapp-init.js?v=1.0.0"></script>
+
+</body>
+</html>
